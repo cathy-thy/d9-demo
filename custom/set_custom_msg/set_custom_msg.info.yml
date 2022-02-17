@@ -1,0 +1,5 @@
+name: 'Set Custom Message'
+description: 'Set custom message when node is updated.'
+package: Custom
+type: module
+core_version_requirement:  ^9

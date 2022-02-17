@@ -1,0 +1,31 @@
+my_custom_form.studentinfo_form:
+  path: '/my_custom_form/form/studentinfo/data'
+  defaults:
+    _form: '\Drupal\my_custom_form\Form\StudentInfoForm'
+    _title: 'Student Info Form'
+  requirements:
+    _access: 'TRUE'
+
+my_custom_form.studentinfo_table_controller_display:
+  path: '/my_custom_form/display/studentinfo'
+  defaults:
+    _controller: '\Drupal\my_custom_form\Controller\StudentInfoController::display'
+    _title: 'All Students Info'
+  requirements:
+    _permission: 'access content'
+
+# my_custom_form.studentinfo_controller_listing:
+#   path: '/studentinfo_table_display'
+#   defaults:
+#     _controller: '\Drupal\my_custom_form\Controller\StudentInfoController::Listing'
+#     _title: 'Listing Records'
+#     requirements:
+#       _permission: 'access content'
+
+my_custom_form.delete_studentinfo_form:
+  path: '/my_custom_form/form/studentinfo/delete/{cid}'
+  defaults:
+    _form: '\Drupal\my_custom_form\Form\DeleteStudentInfoForm'
+    _title: 'Delete Form'
+  requirements:
+    _permission: 'TRUE'

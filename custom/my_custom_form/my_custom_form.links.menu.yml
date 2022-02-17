@@ -1,0 +1,5 @@
+my_custom_form.studentinfo_form:
+  title: 'Student Info Form'
+  route_name: my_custom_form.studentinfo_form
+  parent: system.admin_content
+  weight: -1

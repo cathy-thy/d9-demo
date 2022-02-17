@@ -1,0 +1,28 @@
+<?php
+function my_custom_form_schema() {
+  $schema['studentinfo'] = [
+    'fields' => [
+      'id'=>[
+        'type'=>'serial',
+        'not null' => TRUE,
+      ],
+      'student_name'=>[
+        'type' => 'varchar',
+        'length' => 40,
+        'not null' => TRUE,
+      ],
+      'student_gender'=>[
+        'type' => 'varchar',
+        'length' => 40,
+        'not null' => TRUE,
+      ],
+      'student_email'=>[
+        'type' => 'varchar',
+        'length' => 40,
+        'not null' => TRUE,
+      ],
+    ],
+    'primary key' => ['id'],
+  ];
+  return $schema;
+}

@@ -1,0 +1,5 @@
+name: 'Sample Demo Module'
+description: 'demonstrate how to add a module'
+package: Custom
+type: module
+core_version_requirement:  ^9

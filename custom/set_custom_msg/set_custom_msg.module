@@ -1,0 +1,18 @@
+<?php
+
+use Drupal\Core\Entity\EntityInterface;
+
+/**
+ * Implements hook_ENTITY_TYPE_update.
+ */
+
+function set_custom_msg_node_update(EntityInterface $entity) {
+    $type = $entity->getType();
+
+    //check if we are updating node from basic page (machine name: page)
+    if($type == "page"){
+        //set success message
+        \Drupal::messenger()->addStatus(t('This is a successful message from the custom hook.'));  
+    }
+}
+
